@@ -1,6 +1,6 @@
-#######
+###
 # Providers
-#######
+###
 
 provider "azurerm" {
   alias = "src"
@@ -10,9 +10,9 @@ provider "azurerm" {
   alias = "dst"
 }
 
-#######
+###
 # Resources
-#######
+###
 
 resource "azurerm_virtual_network_peering" "peering_src" {
   provider = azurerm.src
