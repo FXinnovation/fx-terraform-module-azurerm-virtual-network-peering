@@ -2,7 +2,7 @@
 # Resources
 ###
 
-module "azurerm_virtual_network_peering" "peering_src" {
+module "peering_src" {
   providers = {
     azurerm = src
   }
@@ -13,7 +13,7 @@ module "azurerm_virtual_network_peering" "peering_src" {
 
 }
 
-module "azurerm_virtual_network_peering" "peering_dst" {
+module "peering_dst" {
   providers = {
     azurerm = dst
   }
