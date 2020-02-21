@@ -1,9 +1,9 @@
 provider "azurerm" {
- alias = "src"
+  alias = "src"
 }
- 
+
 provider "azurerm" {
- alias = "dst"
+  alias = "dst"
 }
 
 ###
