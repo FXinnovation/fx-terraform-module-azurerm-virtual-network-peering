@@ -4,7 +4,7 @@
 
 module "peering_src" {
   providers = {
-    azurerm = src
+    azurerm = azurerm.src
   }
   source = "./submodule"
 
@@ -15,7 +15,7 @@ module "peering_src" {
 
 module "peering_dst" {
   providers = {
-    azurerm = dst
+    azurerm = azurerm.dst
   }
   source = "./submodule"
 
