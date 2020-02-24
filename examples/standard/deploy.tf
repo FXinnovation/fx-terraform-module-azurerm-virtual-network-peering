@@ -1,6 +1,6 @@
 module "hub_resource_group" {
   providers = {
-    azurerm.src = azurerm.hub
+    alias = "hub"
   }
   source   = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-resource-group.git?ref=0.2.0"
   name     = "hub-resource-group"
