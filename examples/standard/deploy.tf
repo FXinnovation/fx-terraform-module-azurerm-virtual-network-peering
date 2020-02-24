@@ -7,14 +7,14 @@ module "hub_resource_group" {
   location = var.location
 }
 
-# module "spoke_resource_group" {
-#   providers = {
-#     azurerm.dst = azurerm.spoke
-#   }
-#   source   = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-resource-group.git?ref=0.2.0"
-#   name     = "spoke-resource-group"
-#   location = var.location
-# }
+module "spoke_resource_group" {
+  providers = {
+    azurerm = azurerm.spoke
+  }
+  source   = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-resource-group.git?ref=0.2.0"
+  name     = "spoke-resource-group"
+  location = var.location
+}
 
 # module "hub_vnet" {
 #   providers = {
