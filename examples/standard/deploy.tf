@@ -37,10 +37,10 @@ module "spoke_vnet" {
 }
 
 module "hub-spoke-peering" {
-  providers = {
-    azurerm = azurerm.hub
-    azurerm = azurerm.spoke
-  }
+  # providers = {
+  #   azurerm = azurerm.hub
+  #   azurerm = azurerm.spoke
+  # }
   source = "../.."
 
   vnet_src_id = module.hub_vnet.virtual_network_id
