@@ -1,11 +1,12 @@
 provider "azurerm" {
-  alias = "src"
-  features {}
+  version = "~>1.41.0"
+  alias   = "src"
+
 }
 
 provider "azurerm" {
-  alias = "dst"
-  features {}
+  alias   = "dst"
+  version = "~>1.41.0"
 }
 
 ###
