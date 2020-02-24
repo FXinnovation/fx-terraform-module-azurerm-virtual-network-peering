@@ -8,7 +8,7 @@ provider "azurerm" {
 }
 
 provider "azurerm" {
-  version         = "~> 1.41.0"
+  version         = "~> 1.41.0" 
   alias           = "spoke"
   client_id       = var.client_id
   client_secret   = var.client_secret

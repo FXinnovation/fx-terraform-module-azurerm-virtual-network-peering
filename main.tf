@@ -1,10 +1,12 @@
-# provider "azurerm" {
-#   alias = "src"
-# }
+provider "azurerm" {
+  alias = "src"
+  features {}
+}
 
-# provider "azurerm" {
-#   alias = "dst"
-# }
+provider "azurerm" {
+  alias = "dst"
+  features {}
+}
 
 ###
 # Resources
@@ -12,7 +14,7 @@
 
 module "peering_src" {
   providers = {
-    azurerm = azurerm.hub
+    azurerm = azurerm.src
   }
   source = "./submodule"
 
@@ -23,7 +25,8 @@ module "peering_src" {
 
 module "peering_dst" {
   providers = {
-    azurerm = azurerm.spoke
+    azurerm = azurerm.dst
+
   }
   source = "./submodule"
 
