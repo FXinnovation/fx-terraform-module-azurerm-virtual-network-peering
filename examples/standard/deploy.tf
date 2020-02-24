@@ -38,7 +38,7 @@ module "spoke_vnet" {
 
 module "hub-spoke-peering" {
   providers = {
-    hub = azurerm.hub
+    hub   = azurerm.hub
     spoke = azurerm.spoke
   }
   source = "../.."
