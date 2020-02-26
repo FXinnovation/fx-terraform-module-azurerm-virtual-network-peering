@@ -1,3 +1,8 @@
+variable "enabled" {
+  description = "Enable or disable module"
+  default     = true
+}
+
 variable "vnet_src_id" {
   description = "ID of the src vnet to peer"
   type        = string
@@ -15,7 +20,7 @@ variable "custom_peering_src_name" {
 
 variable "src_allow_virtual_network_access" {
   description = "Enable it if you want to block traffic from the remote peered vnet"
-  default     = false
+  default     = true
 }
 
 variable "src_allow_forwarded_traffic" {
@@ -50,7 +55,7 @@ variable "custom_peering_dst_name" {
 
 variable "dst_allow_virtual_network_access" {
   description = "Enable it if you want to block traffic from the remote peered vnet"
-  default     = false
+  default     = true
 }
 
 variable "dst_allow_forwarded_traffic" {

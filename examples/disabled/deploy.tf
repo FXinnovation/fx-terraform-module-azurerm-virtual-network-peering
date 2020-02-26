@@ -41,8 +41,8 @@ module "src-dst-peering" {
     azurerm.src = azurerm.source
     azurerm.dst = azurerm.destination
   }
-  source = "../.."
-
+  source      = "../.."
+  enabled     = false
   vnet_src_id = module.src_vnet.virtual_network_id
   vnet_dst_id = module.dst_vnet.virtual_network_id
 }

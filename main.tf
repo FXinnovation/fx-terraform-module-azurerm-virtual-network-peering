@@ -1,5 +1,5 @@
 ###
-# Providers
+# providers
 ###
 
 provider "azurerm" {
@@ -11,10 +11,11 @@ provider "azurerm" {
 }
 
 ###
-# Resources
+# virtual network peering
 ###
 
 resource "azurerm_virtual_network_peering" "peering_src" {
+  count    = var.enabled ? 1 : 0
   provider = azurerm.src
 
   name = coalesce(
@@ -31,6 +32,7 @@ resource "azurerm_virtual_network_peering" "peering_src" {
 }
 
 resource "azurerm_virtual_network_peering" "peering_dst" {
+  count    = var.enabled ? 1 : 0
   provider = azurerm.dst
 
   name = coalesce(
