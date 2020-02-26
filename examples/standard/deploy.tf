@@ -1,6 +1,6 @@
 module "hub_resource_group" {
   providers = {
-    azurerm.src = azurerm.hub
+    azurerm = azurerm.hub
   }
   source   = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-resource-group.git?ref=0.2.0"
   name     = "hub-resource-group"
@@ -9,7 +9,7 @@ module "hub_resource_group" {
 
 module "spoke_resource_group" {
   providers = {
-    azurerm.dst = azurerm.spoke
+    azurerm = azurerm.spoke
   }
   source   = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-resource-group.git?ref=0.2.0"
   name     = "spoke-resource-group"
@@ -18,7 +18,7 @@ module "spoke_resource_group" {
 
 module "hub_vnet" {
   providers = {
-    azurerm.src = azurerm.hub
+    azurerm = azurerm.hub
   }
   source              = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-virtualnetwork.git?ref=0.2.1"
   resource_group_name = module.hub_resource_group.name
@@ -28,7 +28,7 @@ module "hub_vnet" {
 
 module "spoke_vnet" {
   providers = {
-    azurerm.src = azurerm.spoke
+    azurerm = azurerm.spoke
   }
   source              = "git::https://scm.dazzlingwrench.fxinnovation.com/fxinnovation-public/terraform-module-azurerm-virtualnetwork.git?ref=0.2.1"
   resource_group_name = module.spoke_resource_group.name
