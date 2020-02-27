@@ -11,7 +11,9 @@ terraform destroy
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Providers
 
-No provider.
+| Name | Version |
+|------|---------|
+| random | n/a |
 
 ## Inputs
 
@@ -19,11 +21,7 @@ No provider.
 |------|-------------|------|---------|:-----:|
 | client\_id | n/a | `string` | n/a | yes |
 | client\_secret | n/a | `string` | n/a | yes |
-| dst\_vnet\_address\_space | n/a | `list` | <pre>[<br>  "10.2.0.0/24"<br>]</pre> | no |
-| dst\_vnet\_name | n/a | `string` | `"spoke-vnet"` | no |
 | location | n/a | `string` | `"canadaeast"` | no |
-| src\_vnet\_address\_space | n/a | `list` | <pre>[<br>  "10.1.0.0/24"<br>]</pre> | no |
-| src\_vnet\_name | n/a | `string` | `"hub-vnet"` | no |
 | subscription\_id | n/a | `string` | n/a | yes |
 | tenant\_id | n/a | `string` | n/a | yes |
 

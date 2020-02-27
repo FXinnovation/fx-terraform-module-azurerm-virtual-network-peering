@@ -1,6 +1,6 @@
 resource "random_string" "this" {
-  length = 6
-  upper = false
+  length  = 6
+  upper   = false
   special = false
 }
 
