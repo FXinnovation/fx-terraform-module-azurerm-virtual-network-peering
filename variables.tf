@@ -29,7 +29,7 @@ variable "src_allow_forwarded_traffic" {
 }
 
 variable "src_allow_gateway_transit" {
-  description = "Enable it if the local vnet has a gateway and yo uwant to allow the remote peering to use that gateway for on-prem transit (hub)"
+  description = "Enable it if the local vnet has a gateway and you want to allow the remote peering to use that gateway for on-prem transit (hub)"
   default     = false
 }
 
