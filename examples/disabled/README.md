@@ -21,7 +21,6 @@ terraform destroy
 |------|-------------|------|---------|:-----:|
 | client\_id | n/a | `string` | n/a | yes |
 | client\_secret | n/a | `string` | n/a | yes |
-| location | n/a | `string` | `"canadaeast"` | no |
 | subscription\_id | n/a | `string` | n/a | yes |
 | tenant\_id | n/a | `string` | n/a | yes |
 
