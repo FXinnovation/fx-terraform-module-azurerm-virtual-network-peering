@@ -1,5 +1,5 @@
 module "src-dst-peering" {
-  source      = "../.."
+  source = "../.."
 
-  enabled     = false
+  enabled = false
 }

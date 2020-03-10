@@ -11,9 +11,7 @@ terraform destroy
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Providers
 
-| Name | Version |
-|------|---------|
-| random | n/a |
+No provider.
 
 ## Inputs
 
