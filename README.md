@@ -26,9 +26,9 @@ See `examples` folders for usage of this module.
 | src\_allow\_gateway\_transit | Enable it if the local vnet has a gateway and you want to allow the remote peering to use that gateway for on-prem transit (hub) | `bool` | `false` | no |
 | src\_allow\_virtual\_network\_access | Enable it if you want to block traffic from the remote peered vnet | `bool` | `true` | no |
 | src\_use\_remote\_gateways | Enable it if you want to use the remmote vnet gateway for on-prem transit (spoke) | `bool` | `false` | no |
-| vnet\_dst\_id | ID of the dst vnet to peer | `string` | `""` | yes |
+| vnet\_dst\_id | ID of the dst vnet to peer | `string` | `""` | no |
 | vnet\_dst\_tenant\_id | Tenant ID of the dst vnet to peer | `string` | `""` | no |
-| vnet\_src\_id | ID of the src vnet to peer | `string` | `""` | yes |
+| vnet\_src\_id | ID of the src vnet to peer | `string` | `""` | no |
 | vnet\_src\_tenant\_id | Tenant ID of the src vnet to peer | `string` | `""` | no |
 
 ## Outputs
