@@ -5,7 +5,7 @@ variable "enabled" {
 
 variable "vnet_src_id" {
   description = "ID of the src vnet to peer"
-  type        = string
+  default     = ""
 }
 
 variable "vnet_src_tenant_id" {
@@ -40,7 +40,7 @@ variable "src_use_remote_gateways" {
 
 variable "vnet_dst_id" {
   description = "ID of the dst vnet to peer"
-  type        = string
+  default     = ""
 }
 
 variable "vnet_dst_tenant_id" {
