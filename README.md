@@ -4,17 +4,24 @@
 See `examples` folders for usage of this module.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+| Name | Version |
+|------|---------|
+| terraform | >= 0.12 |
+| azurerm | >= 2.0.0 |
+
 ## Providers
 
 | Name | Version |
 |------|---------|
-| azurerm.dst | ~> 1.41.0 |
-| azurerm.src | ~> 1.41.0 |
+| azurerm.dst | >= 2.0.0 |
+| azurerm.src | >= 2.0.0 |
 
 ## Inputs
 
 | Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:-----:|
+|------|-------------|------|---------|:--------:|
 | custom\_peering\_dst\_name | Custom name of the vnet peerings to create | `string` | `""` | no |
 | custom\_peering\_src\_name | Custom name of the vnet peerings to create | `string` | `""` | no |
 | dst\_allow\_forwarded\_traffic | Enable it if you want to enable the forwarded traffic from the local vnet | `bool` | `false` | no |
