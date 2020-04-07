@@ -1,6 +1,6 @@
 # 1.0.0
 
-* feat: Update `azurem` provider version to `2.x.x`.
+* feat: Update `azurerm` provider version to `2.x.x`.
 
 # 0.1.0
 
